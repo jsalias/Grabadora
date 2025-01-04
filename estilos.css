@@ -2,6 +2,12 @@
 margin: 0;
 padding: 0;
 }
+
+body{
+    width: 100%;
+    height: 60%;
+   }
+   
 header{
 width: 100%;
 height: 10%;
@@ -13,7 +19,7 @@ align-items: center;
 }
 .rec {
     width: 30%;
-   margin-left: 15px;
+    margin-left: 15px;
     text-align: center;
     font-family: fantasy;
     font-size: 60px;
@@ -54,35 +60,31 @@ align-items: center;
                0px -1px 0px black;
   
 }
-
-body{
- width: 100%;
- height: 60%;
-}
-
 main{
-   
+      
     width: 100%;
     height:370px;
    background-color: rgb(159, 218, 215);
 }
+
+
 .contenedor-botones{
    
     width: 100%;
-    height: 50px;
+    height: 30px;
     text-align: center;
 
 }
 
-#grabar,#escuchar,#copiar{
+#grabar,#escuchar,#copiar,#reset,#guardarDoc{
     margin: 20px;
-    width: 250px;
+    width: 150px;
     height: 40px;
     cursor:pointer;
     border-radius: 5px;
 
 }
-#grabar:hover,#escuchar:hover,#copiar:hover{
+#grabar:hover,#escuchar:hover,#copiar:hover,#reset:hover,#guardarDoc:hover{
 
     transform: scale(1.1);
     transition: 0.4s;
@@ -102,10 +104,36 @@ main{
     resize: none;
 }
 
+#confirmacion{
+
+    width: 350px;
+    height: 60px;
+    border: black 2px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    color: yellow;
+    background-color: red;
+    margin-top: -200px;
+    font-size: larger;
+    
+}
+#confirmarReset,#cancelarReset{
+
+width: 40%;
+margin: auto;
+margin-left: 20px;
+padding: auto;
+justify-content: center;
+align-items: center;
+
+}
+
+
 footer{
     width: 100%;
     height: 80px;
-   background-image: url(fondo1.jpg);
+    background-image: url(fondo1.jpg);
     
    
 }
@@ -114,59 +142,57 @@ footer p{
     color: white;
     padding-top: 30px;
     text-align: center;
-   font-weight: bold;
+    font-weight: bold;
     
 }
 
 @media screen and (max-width:600px){
     header , main , footer {
-        width: auto;
-        
-       margin: 0;
-       padding: 0;
+        width: auto; 
+        margin: 0;
+        padding: 0;
      
        }
    
-
-    
-  .rec{  
-       width: 100%;
+    .rec {
+        width: 30%;
+        margin-left: 5px;
+        margin-right: 15px;
        
-       margin-top: 20px;
-        
-    }
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        display: flex;
 
-    
-   h2{
-    width: 0%;
-    text-align: center;
-    font-size: 10px;
-    text-shadow: 1px  0px 0px black,
-               0px  1px 0px black,
-              -1px  0px 0px black,
-               0px -1px 0px black;
     }
-   
-
-    .contenedor-botones{
-   
-        width: 100%;
-      display: flex;
-      justify-content: center;
+    #titulo { 
+        width: 70%;
+        margin-left: 70px;
+        font-weight: bold;
+        color:white;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        text-shadow: 1px  0px 0px black,
+                   0px  1px 0px black,
+                  -1px  0px 0px black,
+                   0px -1px 0px black;
       
-
-        
     }
-    #grabar,#escuchar,#copiar{
+  
+    .contenedor-botones{
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+ 
+    }
+    #grabar,#escuchar,#copiar,#reset,#guardarDoc{
         margin: 5px ;
+        margin-top: 20px;
         width: 70px;
         height: 30px;
         cursor:pointer;
         border-radius: 5px;
-    
     }
-    #grabar:hover,#escuchar:hover,#copiar:hover{
-
+    #grabar:hover,#escuchar:hover,#copiar:hover,#reset:hover,#guardarDoc:hover{
         transform: scale(1.1);
         transition: 0.4s;
     }
@@ -175,35 +201,32 @@ footer p{
         width: 80%;
         height: 100%;
         margin: 50px auto;
-       
-        border-radius: 5px;
+        border-radius: 8px;
         outline: none;
         font-size: 20px;
         font-family: 'Inter', sans-serif; 
         resize: none;
     }
 
-
-
-    #pfooter{
-      
-        font-size: 20px;
-        display: flex;
-        text-align: center;
-        
-    }
-    
     header{
-        height: 20%;
+        height: 106px;
     }
 
     main{
         height: 400px;
     }
     footer{
-       height: 120px;
+        width: 100%;
+        height: 120px;
+        margin: 0;
 
     }
-    
-  
+    footer p{
+        font-family: 'Inter', sans-serif;
+        color: white;
+        padding-top: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
 }
